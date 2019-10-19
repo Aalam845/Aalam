@@ -1,0 +1,40 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>house database</title>
+	<style type="text/css">
+		table,tr,td{
+			border:2px solid grey;
+			padding: 25px;
+		}
+		table{
+			border-collapse: collapse;
+			margin-top: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<center><h1>HOUSE INFORMATION</h1></center>
+	<center>
+	<table>
+	<tr>
+		<td>HOUSE NAME</td>
+		<td>BUYING DATE</td>
+		<td>ADD</td>
+	</tr>
+	{% for i in details %}
+		<tr>
+			<td>{{i.name_house}}</td>
+			<td>{{i.date_house}}</td>
+			<td><a href="{% url 'wishlist' i.id %}">ADD</a></td>
+		</tr>
+	{% endfor %}
+</table>	
+</center>
+</body>
+</html>

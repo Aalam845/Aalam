@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wishlist Page</title>
+		<style type="text/css">
+			table,tr,td{
+				border:2px solid grey;
+				padding: 25px;
+			}
+			table{
+				border-collapse: collapse;
+				margin-top: 150px;
+			}
+		</style>
+
+</head>
+<body>
+	<center>
+	<table>
+		<tr>
+			<td>PRODUCT NAME</td>
+			<td>BUYING DATE</td>
+			<td>REMOVE</td>
+		</tr>
+		<tr>
+			<td>{{details.name_house}}</td>
+			<td>{{details.date_house}}</td>
+			<td><a href="{% url 'destroy' details.id %}">Remove</a></td>
+		</tr>
+	</table>
+	</center>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wishlist Page</title>
+		<style type="text/css">
+			table,tr,td{
+				border:2px solid grey;
+				padding: 25px;
+			}
+			table{
+				border-collapse: collapse;
+				margin-top: 150px;
+			}
+		</style>
+
+</head>
+<body>
+	<center>
+	<table>
+		<tr>
+			<td>PRODUCT NAME</td>
+			<td>BUYING DATE</td>
+			<td>REMOVE</td>
+		</tr>
+		<tr>
+			<td>{{details.name_car}}</td>
+			<td>{{details.date_car}}</td>
+			<td><a href="{% url 'destroy' details.id %}">Remove</a></td>
+		</tr>
+	</table>
+	</center>
+</body>
+</html>

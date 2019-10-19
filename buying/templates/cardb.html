@@ -1,0 +1,40 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>house database</title>
+	<style type="text/css">
+		table,tr,td{
+			border:2px solid grey;
+			padding: 25px;
+		}
+		table{
+			border-collapse: collapse;
+			margin-top: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<center><h1>CAR INFORMATION</h1></center>
+	<center>
+	<table>
+	<tr>
+		<td>CAR NAME</td>
+		<td>CAR DATE</td>
+		<td>ADD</td>
+	</tr>
+	{% for i in details %}
+		<tr>
+			<td>{{i.name_car}}</td>
+			<td>{{i.date_car}}</td>
+			<td><a href="{% url 'wishlist1' i.id %}">ADD</a></td>
+		</tr>
+	{% endfor %}
+</table>	
+</center>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% include 'index.html' %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>car form page</title>
+</head>
+<body>
+	<form method="POST">
+		{% csrf_token %}
+		<label>CAR_NAME:</label><br>
+		<input type="text" name="name_car"><br>
+		<label>Date</label><br>
+		<input type="Date" name="date_car"><br><br><br>
+		<input type="submit" name="submit"><br>
+	</form>
+</body>
+</html>
